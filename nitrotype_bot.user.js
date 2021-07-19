@@ -124,7 +124,7 @@ async function main(ws) {
   var words = scan_for_text(message)
   if (words) {
       await type(words, wpm, accuracy)
-      setTimeout( function() {location.reload()}, Math.floor()*2)
+      setTimeout( function() {location.reload()}, Math.floor()/2)
   }
 }
 setTimeout( function () {
